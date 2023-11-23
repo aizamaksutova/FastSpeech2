@@ -12,4 +12,10 @@ To download the LjSpeech dataset, Waveglow model, alignments and mels run the fo
 ```
 If you have any issues with files asking you to access the files later try using simple scp from local computer to server
 
-### 
+### Run inference
+After you have downloaded all the necessary data, make sure to run inference with this command
+
+```
+python3 test.py -c hw_tts/configs/final_config.json -r final_model.pth -f inference.txt
+```
+The target texts are in the inference.txt file
